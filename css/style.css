@@ -1,0 +1,473 @@
+/* =========================
+   Global Setting
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+
+body{
+
+    background:
+    linear-gradient(135deg,#12001f,#2b0038,#50005e);
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================
+   Navigation Bar
+========================= */
+
+header{
+
+    background:rgba(20,0,40,0.7);
+
+    backdrop-filter:blur(10px);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 10%;
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#ff4fd8;
+
+    text-shadow:
+    0 0 10px #ff4fd8;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+
+nav ul li a:hover{
+
+    color:#ff4fd8;
+
+    text-shadow:
+    0 0 10px #ff4fd8;
+
+}
+
+
+
+/* =========================
+   Home Page
+========================= */
+
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:100px;
+
+    padding:50px 10%;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:55px;
+
+}
+
+
+
+.hero-text span{
+
+    color:#ff4fd8;
+
+    text-shadow:
+    0 0 15px #ff4fd8;
+
+}
+
+
+
+.hero-text p{
+
+    margin-top:15px;
+
+    font-size:20px;
+
+    color:#e6c7ff;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:12px 35px;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+    45deg,
+    #9b00ff,
+    #ff4fd8
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 0 25px #ff4fd8;
+
+}
+
+
+
+
+/* Profile Image */
+
+
+.hero-image img{
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #ff4fd8;
+
+
+    box-shadow:
+
+    0 0 30px #ff4fd8;
+
+}
+
+
+
+/* =========================
+   Content Pages
+========================= */
+
+
+.content{
+
+    padding:80px 10%;
+
+    text-align:center;
+
+}
+
+
+
+.content h1{
+
+    font-size:45px;
+
+    margin-bottom:30px;
+
+    color:#ff4fd8;
+
+}
+
+
+
+.content p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#eadcff;
+
+}
+
+
+
+/* =========================
+   Cards
+========================= */
+
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+
+
+.card{
+
+    width:280px;
+
+    padding:30px;
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    border-radius:20px;
+
+
+    border:
+
+    1px solid rgba(255,79,216,0.4);
+
+
+    backdrop-filter:blur(10px);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.card h3{
+
+    color:#ff4fd8;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+    0 0 25px #9b00ff;
+
+
+}
+
+
+
+/* =========================
+   Certificate Image
+========================= */
+
+
+.certificate img{
+
+    width:300px;
+
+    border-radius:15px;
+
+    margin:20px;
+
+    border:3px solid #ff4fd8;
+
+}
+
+
+
+/* =========================
+   Contact
+========================= */
+
+
+.contact-box{
+
+    margin:auto;
+
+    max-width:500px;
+
+    padding:30px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+.contact-box a{
+
+    color:#ff4fd8;
+
+    text-decoration:none;
+
+}
+
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#12001f;
+
+    color:#d8b4ff;
+
+}
+
+
+
+/* =========================
+   Responsive Mobile
+========================= */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+    flex-direction:column;
+
+}
+
+
+nav ul{
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:40px;
+
+}
+
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+}
